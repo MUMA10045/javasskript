@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>delete element example</title>
+        
+
+    </head>
+    <body>
+        <ul id="myList">
+            <li>ITEM 1</li>
+            <li>Item 2</li>
+        </ul>
+        <button onclick="removeItem()">Remove Last Item</button>
+        <script>
+            function removeItem(){
+                const ul =document.getElementById("myList");
+                if(ul.lastElementChild){
+                    ul.removeChild(ul.lastElementChild);
+                }
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>Create element example</title>
+        
+
+    </head>
+    <body>
+        <ul id="myList">
+            <li>ITEM</li>
+        </ul>
+        <button onclick="additem()">Add item</button>
+        <script>
+            function additem(){
+                const ul =document.getElementById("myList");
+                const li =document.createElement("li");
+                li.innerHTML="Agwambo";
+                ul.appendChild(li);
+            }
+        </script>
+    </body>
+</html>

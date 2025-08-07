@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ENG">
+    <head>
+        <title>adding</title>
+    </head>
+    <body>
+        <input type="text" id="userinput" placeholder="enter">
+        <button onclick="displaytext()">Submit</button>
+        <h2 id="output"></h2>
+        <script>
+            function displaytext(){
+                const input=document.getElementById("userinput").value
+                document.getElementById("output").textContent=input
+            }
+        </script>
+    </body>
+</html>

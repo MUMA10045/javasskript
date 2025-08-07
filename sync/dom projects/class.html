@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>get element by class name</title>
+    </head>
+    <body>
+      <div class="note">Note 1</div>
+      <div class="note">Note 2</div>
+      <div class="note">Note 3</div>
+        <button onclick="makeBold()">Make Notes Bold</button>
+       <script>
+        function makeBold(){
+            const notes=document.getElementsByClassName("note");
+            for(let i=0; i<notes.length; i++){
+                notes[i].style.fontWeight="bold"
+            }
+        }
+       </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>queryselector example</title>
+    </head>
+    <body>
+      <p class="message">Original message</p>
+      <p class="message">Original message</p>
+      <p class="message">Original message</p>
+        <button onclick="updateMessage()">Update</button>
+       <script>
+        function updateMessage(){
+            document.querySelector(".message").textContent="Message has been updated";
+        }
+       </script>
+    </body>
+</html>

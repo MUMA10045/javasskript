@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello goodbye toggle</title>
+        <style>
+            #message {
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="message">Hello</div>
+        <button onclick="toggleMessage()">Toggle</button>
+        <script>
+            function toggleMessage(){
+                const messageElement=document.getElementById("message");
+                if(messageElement.style.color="green"){
+                    messageElement.style.color="blue";
+                }
+                else{
+                   messageElement.style.color="blue";
+                }
+            }
+        </script>
+    </body>
+</html>

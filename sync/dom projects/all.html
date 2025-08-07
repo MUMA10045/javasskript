@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>queryselector example</title>
+    </head>
+    <body>
+            <ul>
+                <li class="item">Item 1</li>
+                <li class="item">Item 2</li>
+                <li class="item">Item 3</li>
+            </ul>
+        <button onclick="highlightItems()">Highlight all</button>
+       <script>
+        function highlightItems(){
+            const items = document.querySelectorAll(".item");
+            items.forEach(item=>{
+                item.style.fonttype="comic sans";
+            })
+        }
+       </script>
+    </body>
+</html>

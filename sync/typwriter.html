@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>
+        typewriter
+        </title>
+    </head>
+    <body>
+        <p id="typewriter"></p>
+        <script>
+            let text = "Welcome to our website";
+            let index = 0;
+            function typewriter(){
+                if(index < text.length){
+                    document.getElementById("typewriter").innerHTML+= index++;
+                    setTimeout(typewriter,1)//adda next characters after 100 ms
+                }
+            }
+        </script>
+    </body>
+</html>

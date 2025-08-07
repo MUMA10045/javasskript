@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        
+        <title>get element by tag name example</title>
+    </head>
+    <body>
+      <p>This is paragraph 1</p>
+      <p>This is paragraph 2</p>
+        <button onclick="changeColor()">Change color</button>
+       <script>
+        function changeColor(){
+           const paragraphs=document.getElementsByTagName("p");
+           for(let para of paragraphs){
+            para.style.backgroundColor="lightyellow";
+            para.style.color="green"
+            para.style.fontWeight="bold"
+            para.style.fontFamily="ariel black"
+           }
+        }
+       </script>
+    </body>
+</html>
